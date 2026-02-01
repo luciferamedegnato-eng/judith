@@ -1,0 +1,301 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header/Hero Section */
+/* To modify: Change background-color, padding, colors, or image size */
+header {
+    background-color: #1a1a1a; /* Section background color */
+    padding: 100px 0 80px; /* Top/bottom padding */
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Gap between text and image */
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 10px;
+    color: #00ff88; /* Heading color - green accent */
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Subtitle size */
+    margin-bottom: 20px;
+    color: #00aaff; /* Subtitle color - blue accent */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-image img {
+    width: 200px; /* Profile image width */
+    height: 200px; /* Profile image height */
+    border-radius: 50%; /* Makes it circular */
+    border: 5px solid #00ff88; /* Border color and thickness */
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00ff88;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+}
+
+.skill i {
+    font-size: 2rem;
+    color: #00aaff;
+}
+
+/* Projects Section */
+.project {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project h3 {
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+
+.project p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Certifications and Social Sections */
+#certifications p,
+#social p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#social a {
+    color: #00aaff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+#social a:hover {
+    color: #00ff88;
+}
+
+/* Interests Section */
+#interests p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Floating Animation */
+/* To modify: Change position, size, or z-index for different placement */
+.floating-animation {
+    position: fixed; /* Fixed position for floating effect */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    width: 200px; /* Animation container width */
+    height: 200px; /* Animation container height */
+    z-index: 1000; /* High z-index to stay on top */
+    pointer-events: none; /* Allows clicking through */
+}
+
+.orbit-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the icon */
+    font-size: 2rem; /* Center icon size */
+    color: #00ff88; /* Center icon color */
+    text-align: center;
+}
+
+.center-icon i {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.center-icon span {
+    font-size: 0.8rem; /* Label font size */
+    color: #00aaff; /* Label color */
+}
+
+.orbiting-icon {
+    position: absolute;
+    font-size: 1.5rem; /* Orbiting icon size */
+    transition: color 0.3s ease; /* Color transition on hover */
+    pointer-events: auto; /* Allow mouse events on orbiting icons */
+}
+
+/* Real brand colors for each technology */
+.icon1 { color: #E34F26; } /* HTML5 - Orange */
+.icon2 { color: #1572B6; } /* CSS3 - Blue */
+.icon3 { color: #F7DF1E; } /* JavaScript - Yellow */
+.icon4 { color: #ED8B00; } /* Java - Orange */
+.icon5 { color: #777BB4; } /* PHP - Purple */
+.icon6 { color: #3776AB; } /* Python - Blue */
+.icon7 { color: #4479A1; } /* SQL/MySQL - Blue */
+.icon8 { color: #F24E1E; } /* Figma - Red-Orange */
+
+.orbiting-icon:hover {
+    color: #00ff88; /* Hover color - green accent */
+}
+
+/* Tooltip Styles */
+/* To modify: Change background, padding, or font-size for tooltip appearance */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px; /* Tooltip padding */
+    border-radius: 5px; /* Border radius */
+    font-size: 0.9rem; /* Font size */
+    text-align: center;
+    pointer-events: none;
+    z-index: 1001; /* Higher than animation */
+    display: none; /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.tooltip img {
+    border-radius: 3px; /* Image border radius */
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .skill {
+        padding: 15px;
+    }
+
+    .hero {
+        gap: 20px;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        font-size: 0.9rem;
+    }
+}
