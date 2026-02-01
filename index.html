@@ -1,0 +1,143 @@
+<!-- Portfolio Website for Alexandre J.V. Amegnato -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title: Change this to update the browser tab title -->
+    <title>Alexandre J.V. Amegnato - Développeur Web en Ingénierie Informatique</title>
+    <!-- CSS Links: styles.css for custom styles, Font Awesome for icons -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- JavaScript: script.js for animations and interactivity -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header id="home">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <!-- Main heading: Change the name and title here -->
+                    <h1>Hii, je suis Alexandre J.V. Amegnato</h1>
+                    <p>Étudiant en 3ème année d'Ingénierie Informatique | Développeur Web</p>
+                    <div class="contact">
+                        <!-- Contact info: Update email, phone, and location -->
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:junioramegnato28@gmail.com">junioramegnato28@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> +228 97 15 95 60</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kpogan, Lomé, Togo</p>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Profile image: Replace placeholder with actual image URL -->
+                    <img src="https://via.placeholder.com/300x300?text=Profile+Image" alt="Alexandre J.V. Amegnato">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section: Modify the text to update your personal description -->
+    <section id="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Étudiant en 3ème année de Licence en Ingénierie Informatique à ESIG GLOBAL SUCCESS (Togo), spécialisé en développement web et ingénierie logicielle. Je recherche un stage pour mes compétences en développement web et à projets innovants au sein d'une équipe dynamique. Passionné par la résolution de problèmes et la création d'applications intuitives.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section: Add or remove skills by editing the skills-grid div -->
+    <section id="skills">
+        <div class="container">
+            <h2>Compétences Techniques</h2>
+            <div class="skills-grid">
+                <!-- Each skill is a div with an icon and text. Use Font Awesome icons -->
+                <div class="skill"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill"><i class="fab fa-java"></i> Java</div>
+                <div class="skill"><i class="fab fa-php"></i> PHP</div>
+                <div class="skill"><i class="fab fa-python"></i> Python</div>
+                <div class="skill"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill"><i class="fas fa-database"></i> MySQL</div>
+                <div class="skill"><i class="fab fa-figma"></i> Figma</div>
+                <div class="skill"><i class="fas fa-file-pdf"></i> Génération de PDF</div>
+                <div class="skill"><i class="fab fa-whatsapp"></i> Intégration WhatsApp</div>
+                <div class="skill"><i class="fas fa-envelope"></i> Intégration Email</div>
+                <div class="skill"><i class="fas fa-mobile-alt"></i> Design Responsive</div>
+                <div class="skill"><i class="fas fa-shield-alt"></i> Architecture et Sécurité des Données</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projets clés</h2>
+            <div class="project">
+                <h3>Application de facturation complète</h3>
+                <p>Génération automatique de factures au format PDF, système d'envoi par email et WhatsApp, interface utilisateur intuitive.</p>
+            </div>
+            <div class="project">
+                <h3>Projets académiques</h3>
+                <p>Création de fonctionnalités clés (analyse des besoins, tests, dégroupage), développement d'applications web innovatrices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <p>Projets académiques en Licence d'Ingénierie Informatique.</p>
+        </div>
+    </section>
+
+    <section id="social">
+        <div class="container">
+            <h2>Réseaux sociaux</h2>
+            <p>Suivez mes projets sur <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a> et <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>.</p>
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="container">
+            <h2>Centres d'intérêt</h2>
+            <p>Programmation créative : Développement de projets personnels pour explorer de nouvelles technologies.</p>
+            <p>Veille technologique : Suivi des tendances en développement web.</p>
+            <p>Musique : Pratique instrumentale et découverte de genres variés.</p>
+        </div>
+    </section>
+
+    <!-- Floating Animation: Orbiting icons around MySQL. Hover to see tooltips with real images -->
+    <!-- To modify: Change data-tooltip and data-image attributes for each orbiting-icon -->
+    <div class="floating-animation">
+        <div class="orbit-container">
+            <!-- Center icon: MySQL database icon -->
+            <div class="center-icon">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+            </div>
+            <!-- Orbiting icons: Each has a tooltip and image URL for hover effect -->
+            <div class="orbiting-icon icon1" data-tooltip="HTML5" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><i class="fab fa-html5"></i></div>
+            <div class="orbiting-icon icon2" data-tooltip="CSS3" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><i class="fab fa-css3-alt"></i></div>
+            <div class="orbiting-icon icon3" data-tooltip="JavaScript" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><i class="fab fa-js-square"></i></div>
+            <div class="orbiting-icon icon4" data-tooltip="Java" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><i class="fab fa-java"></i></div>
+            <div class="orbiting-icon icon5" data-tooltip="PHP" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"><i class="fab fa-php"></i></div>
+            <div class="orbiting-icon icon6" data-tooltip="Python" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><i class="fab fa-python"></i></div>
+            <div class="orbiting-icon icon7" data-tooltip="SQL" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><i class="fas fa-database"></i></div>
+            <div class="orbiting-icon icon8" data-tooltip="Figma" data-image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"><i class="fab fa-figma"></i></div>
+        </div>
+        <!-- Tooltip container: Displays on hover -->
+        <div class="tooltip" id="tech-tooltip"></div>
+    </div>
+
+    <!-- Footer: Update copyright year and name as needed -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Alexandre Junior.Vignon. AMEDEGNATO. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/22897159560" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
